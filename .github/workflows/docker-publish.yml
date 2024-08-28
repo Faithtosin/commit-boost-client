@@ -51,7 +51,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: ghcr.io/Faithtosin/commit-boost-client/pbs:${{ env.DOCKER_TAG }}
+          tags: ghcr.io/faithtosin/commit-boost-client/pbs:${{ env.DOCKER_TAG }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
           file: docker/pbs.Dockerfile
@@ -61,7 +61,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: ghcr.io/Faithtosin/commit-boost-client/signer:${{ env.DOCKER_TAG }}
+          tags: ghcr.io/faithtosin/commit-boost-client/signer:${{ env.DOCKER_TAG }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
           file: docker/signer.Dockerfile
